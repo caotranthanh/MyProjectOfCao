@@ -29,7 +29,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: bosstran9x/demo-cicd
-        registry: registry-url.io
-        dockerfile: Dockerfile.ci
+        registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
